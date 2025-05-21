@@ -11,21 +11,22 @@ This project is focused on managing and processing MSISDN (Mobile Station Intern
 ## Installation
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/caspater/msisdn.git
-    ```
+   ```bash
+   git clone https://github.com/caspater/msisdn.git
+   ```
 2. Navigate to the project directory:
-    ```bash
-    cd msisdn
-    ```
+   ```bash
+   cd msisdn
+   ```
 3. Install dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 ## Usage
 
 Import the library and use it in your project:
+
 ```javascript
 const msisdn = require('msisdn');
 
