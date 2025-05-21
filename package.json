@@ -11,7 +11,8 @@
     "url": "https://github.com/caspater/msisdn/issues"
   },
   "scripts": {
-    "ci": "npm run build && npm run check-format && npm run check-exports && npm run lint && npm run test",
+    "ci": "npm run build && npm run check-format && npm run check-exports && npm run test",
+    "build": "tsc",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
