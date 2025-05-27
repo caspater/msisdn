@@ -58,7 +58,11 @@ class MSISDN {
   }
 
   internationalize(withPlus: boolean = false) {
-    this.phone = internationalize(this.phone, Schema[this.country].countryCode, withPlus);
+    this.phone = internationalize(
+      this.phone,
+      Schema[this.country].countryCode,
+      withPlus,
+    );
     return this;
   }
 
