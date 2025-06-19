@@ -10,12 +10,12 @@ import {
 class MSISDN {
   private phone: string;
   private readonly country: keyof typeof Schema;
-  private readonly type: keyof (typeof Schema)['MW']['types'] | null;
+  private readonly type: any | null;
 
   constructor(
     phoneNumber: string,
     country: keyof typeof Schema = 'MW',
-    type: keyof (typeof Schema)['MW']['types'] | null = null,
+    type: any = null,
   ) {
     this.phone = phoneNumber;
     this.country = country;
@@ -29,7 +29,9 @@ class MSISDN {
           new RegExp(
             `${getRegexString(
               Schema[this.country].countryCode,
+              //@ts-ignore
               Schema[this.country].types[this.type].codes,
+              //@ts-ignore
               Schema[this.country].types[this.type].localNumberLength,
             )}`,
           ),
@@ -72,7 +74,7 @@ class MSISDN {
   }
 
   humanize() {
-    this.localize()
+    this.localize();
   }
 
   dropLeading() {
@@ -101,12 +103,12 @@ export const msisdn = (
   options: {
     autoClean?: boolean;
     country?: keyof typeof Schema;
-    type?: keyof (typeof Schema)['MW']['types'] | null;
+    type?: any | null;
   } = {
-      autoClean: true,
-      country: 'MW',
-      type: null,
-    },
+    autoClean: true,
+    country: 'MW',
+    type: null,
+  },
 ): MSISDN => {
   const defaultOptions = {
     autoClean: true,

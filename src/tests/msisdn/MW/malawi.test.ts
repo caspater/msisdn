@@ -1,5 +1,5 @@
 import { test, expect } from 'vitest';
-import { msisdn } from '../../MSISDN.js';
+import { msisdn } from '../../../MSISDN.js';
 
 test('it returns true if number is valid', () => {
   expect(msisdn('0888800900', { country: 'MW' }).isValid()).toBe(true);
