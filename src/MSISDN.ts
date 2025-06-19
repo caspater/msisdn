@@ -71,6 +71,10 @@ class MSISDN {
     return this;
   }
 
+  humanize() {
+    this.localize()
+  }
+
   dropLeading() {
     this.phone = dropLeading(this.phone, Schema[this.country].countryCode);
     return this;
@@ -99,10 +103,10 @@ export const msisdn = (
     country?: keyof typeof Schema;
     type?: keyof (typeof Schema)['MW']['types'] | null;
   } = {
-    autoClean: true,
-    country: 'MW',
-    type: null,
-  },
+      autoClean: true,
+      country: 'MW',
+      type: null,
+    },
 ): MSISDN => {
   const defaultOptions = {
     autoClean: true,
