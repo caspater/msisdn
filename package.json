@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A package to format or validate msisdns (Malawi)",
   "keywords": [
-    "demo",
-    "typescript"
+    "msisdn",
+    "phone number"
   ],
   "homepage": "https://github.com/caspater/msisdn",
   "bugs": {

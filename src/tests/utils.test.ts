@@ -56,11 +56,3 @@ test('it gets regex', () => {
     '^(?:265|0|\\+265)?(?:88\\d{7}|89\\d{7})$',
   );
 });
-
-// test("it formats a number", () => {
-//     expect(cleanPhoneNumber('0888 800 900', "265")).toBe('888800900');
-//     expect(cleanPhoneNumber('0888 800 900', "265")).toBe('888800900');
-//     expect(cleanPhoneNumber('0888 800 900', "265")).toBe('888800900');
-//     expect(cleanPhoneNumber('0888 800 900', "265")).toBe('888800900');
-// }
-// );
