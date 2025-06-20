@@ -93,26 +93,26 @@ The string version of the msisdn can be retrieved by using the `get` function.
 
 ## <a id="supported-countries"></a>Supported Countries
 
-| Country | Code | Type   | Type Identifier |
-| ------- | ---- | ------ | --------------- |
-| Malawi  | MW   | TNM    | TNM             |
-|         |      | Airtel | Airtel          |
-|||Access|Access|
-|||MTL|MTL|
-|Zambia|ZM|MTN|MTN|
-|||Airtel|Airtel|
-|||Zamtel|Zamtel|
-|Tanzania(The numbers are potable so type validation may not be accurate sometimes)|TZ|Vodacom|Vodacom|
-|||Airtel|Airtel|
-|||Tigo|Tigo|
-|||Halotel|Halotel|
-|||Zantel|Zantel|
-|||Smile|Smile|
-|||TTCL|TTCL|
-|Nigeria|NG|Portable|Portable
-|Rwanda|RW|MTN|MTN|
-|||Airtel|Airtel|
-|South Africa|ZA|Portable|Portable
+| Country                                                                            | Code | Type     | Type Identifier |
+| ---------------------------------------------------------------------------------- | ---- | -------- | --------------- |
+| Malawi                                                                             | MW   | TNM      | TNM             |
+|                                                                                    |      | Airtel   | Airtel          |
+|                                                                                    |      | Access   | Access          |
+|                                                                                    |      | MTL      | MTL             |
+| Zambia                                                                             | ZM   | MTN      | MTN             |
+|                                                                                    |      | Airtel   | Airtel          |
+|                                                                                    |      | Zamtel   | Zamtel          |
+| Tanzania(The numbers are potable so type validation may not be accurate sometimes) | TZ   | Vodacom  | Vodacom         |
+|                                                                                    |      | Airtel   | Airtel          |
+|                                                                                    |      | Tigo     | Tigo            |
+|                                                                                    |      | Halotel  | Halotel         |
+|                                                                                    |      | Zantel   | Zantel          |
+|                                                                                    |      | Smile    | Smile           |
+|                                                                                    |      | TTCL     | TTCL            |
+| Nigeria                                                                            | NG   | Portable | Portable        |
+| Rwanda                                                                             | RW   | MTN      | MTN             |
+|                                                                                    |      | Airtel   | Airtel          |
+| South Africa                                                                       | ZA   | Portable | Portable        |
 
 ## Contributing
 
