@@ -79,6 +79,7 @@ The formatting helpers will return the MSISDN instance so chaining can be used t
 | clean            |                     | #####                  | Removes special characters from the msisdn              |
 | internationalize | `withPlus: boolean` | {+?}{countryCode}##### | Prepends the country code                               |
 | localize         |                     | {0}#####               | Prepends a 0 to the msisdn                              |
+| humanize         |                     | {0}#####               | Prepends a 0 to the msisdn                              |
 | dropLeading      |                     | #####                  | Drops the country code or the leading 0 from the msisdn |
 
 ### Getters
@@ -96,6 +97,22 @@ The string version of the msisdn can be retrieved by using the `get` function.
 | ------- | ---- | ------ | --------------- |
 | Malawi  | MW   | TNM    | TNM             |
 |         |      | Airtel | Airtel          |
+|||Access|Access|
+|||MTL|MTL|
+|Zambia|ZM|MTN|MTN|
+|||Airtel|Airtel|
+|||Zamtel|Zamtel|
+|Tanzania(The numbers are potable so type validation may not be accurate sometimes)|TZ|Vodacom|Vodacom|
+|||Airtel|Airtel|
+|||Tigo|Tigo|
+|||Halotel|Halotel|
+|||Zantel|Zantel|
+|||Smile|Smile|
+|||TTCL|TTCL|
+|Nigeria|NG|Portable|Portable
+|Rwanda|RW|MTN|MTN|
+|||Airtel|Airtel|
+|South Africa|ZA|Portable|Portable
 
 ## Contributing
 
