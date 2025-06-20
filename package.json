@@ -1,6 +1,6 @@
 {
   "name": "@caspater/msisdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package to format or validate msisdns (Malawi)",
   "keywords": [
     "msisdn",
